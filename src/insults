@@ -1,0 +1,6 @@
+Name: Insult users who mistype their passwords.
+Default: no
+Priority: 0
+Auth-Type: Primary
+Auth:
+    [default=ignore]   pam_exec.so stdout /usr/lib/pam.d/insults/pam-insult.sh
