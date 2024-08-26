@@ -9,7 +9,7 @@ Run:
 
 This will add pam-insult to your system and add to /etc/pam.d/common-auth:
 
-    auth [default=ignore]   pam_exec.so stdout /usr/lib/pam.d/insults/pam-insult.sh
+    auth [default=ignore]   pam_exec.so stdout quiet /usr/lib/pam.d/insults/pam-insult.sh
 
 You can disable/re-enable this PAM module with pam-auth-update, *do not* edit /etc/pam.d/common-auth directly.
 

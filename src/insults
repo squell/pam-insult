@@ -3,4 +3,4 @@ Default: no
 Priority: 0
 Auth-Type: Primary
 Auth:
-    [default=ignore]   pam_exec.so stdout /usr/lib/pam.d/insults/pam-insult.sh
+    [default=ignore]   pam_exec.so stdout quiet /usr/lib/pam.d/insults/pam-insult.sh

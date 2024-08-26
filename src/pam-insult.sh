@@ -30,3 +30,5 @@ insults=(
 
 n=$(($RANDOM % ${#insults[@]}))
 echo "${insults[n]}"
+
+false
