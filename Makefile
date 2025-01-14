@@ -12,7 +12,7 @@ install: dependencies
 	grep -q $(INSTALL_PATH)/$(SCRIPT) src/$(MODULE) # check if the module is consistent with the install paths here
 	test -x src/$(SCRIPT)
 	test -d $(PAM_CONFIG_DIR)
-	mkdir -p $(INSTALL_PATH)
+	install -d $(INSTALL_PATH)
 	install src/$(SCRIPT) $(INSTALL_PATH)/$(SCRIPT)
 	install src/$(MODULE) $(PAM_CONFIG_DIR)
 	/usr/sbin/pam-auth-update --package --enable $(MODULE)
